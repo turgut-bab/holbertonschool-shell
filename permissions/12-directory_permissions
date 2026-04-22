@@ -1,3 +1,2 @@
 #!/bin/bash
-rm -rf my_dir
-mkdir -m 751 my_dir
+rm -rf my_dir && mkdir -m 751 my_dir

